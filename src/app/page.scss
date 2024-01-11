@@ -1,0 +1,37 @@
+@import "colors";
+.main_content{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  color: $font-color2;
+  &__container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 95%;
+
+    h1, p{
+      margin-bottom: .5em;
+      margin-top: 0;
+    }
+    h1{
+      color: $font-color1;
+      font-size: 3em;
+      @media (max-width: 1024px) {
+        font-size: 2.5em;
+      }
+      @media (max-width: 768px) {
+        font-size: 2em;
+      }
+    }
+    p{
+      width: 60%;
+      @media (max-width: 768px) {
+        font-size: .9em;
+        width: 80%;
+      }
+    }
+  }
+}
+

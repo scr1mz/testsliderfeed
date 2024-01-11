@@ -1,0 +1,46 @@
+.slider {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.nav-arrows{
+  width: 100%;
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow{
+  border: none;
+  width: 16em;
+  height: 4em;
+  display: block;
+  object-fit: cover;
+  transition: all .5s ease;
+}
+.custom-prev-arrow{
+  background: url("../../assets/images/leftarrNormal.svg") no-repeat;
+  &:hover{
+    cursor: pointer;
+    background: url("../../assets/images/leftarrHover.svg") no-repeat;
+  }
+}
+
+.custom-next-arrow{
+  right: 0;
+  background: url("../../assets/images/rightarrNormal.svg") no-repeat;
+  &:hover{
+    cursor: pointer;
+    background: url("../../assets/images/rightarrHover.svg") no-repeat;
+  }
+}

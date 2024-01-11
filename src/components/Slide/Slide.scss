@@ -1,0 +1,56 @@
+@import "src/app/colors";
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 5em;
+    max-height: 9em;
+    border-radius: 8px;
+    margin-bottom: .5em;
+    object-fit: cover;
+
+    @media (max-width: 760px) {
+      max-height: 8em;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+    margin-right: 2em;
+    color: $font-color3;
+  }
+
+  p:last-child{
+    font-size: .6em;
+    margin-top: .5em;
+    color: fade-out($font-color1, 0.2);
+  }
+
+  &.shape-circle{
+    img{
+      clip-path: circle();
+      border-radius: 50%;
+    }
+  }
+  &.shape-leaf{
+    img{
+      border-radius: 55% 0;
+    }
+  }
+  &.shape-reverse-leaf{
+    img{
+      border-radius: 0 55%;
+    }
+  }
+  &.shape-ellipse{
+    img {
+      border-radius: 50% / 70%;
+    }
+  }
+}
