@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
 import 'swiper/swiper-bundle.css'
@@ -22,7 +22,7 @@ interface SliderProps {
 }
 
 const Slider: React.FC<SliderProps> = ({ slides }) => {
-    const swiperRef = useRef<typeof Swiper>()
+    const swiperRef = useRef<any | null>(null);
     return (
         <div className="slider">
             <Swiper
@@ -34,7 +34,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
                     nextEl: '.custom-next-button',
                     prevEl: '.custom-prev-button',
                 }}
-                onSwiper={(swiper: typeof Swiper) => (swiperRef.current = swiper)}
+                onSwiper={(swiper: any) => (swiperRef.current = swiper)}
                 breakpoints= {{
                     576: {
                         slidesPerView: 2,

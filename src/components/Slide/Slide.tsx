@@ -17,7 +17,9 @@ export const Slide: React.FC<SlideProps> = ({ id, types, img, title, date, shape
 
     return (
         <div className={`slide ${slideType} shape-${shape}`}>
-            <img src={img} alt={`Slide ${id}`}/>
+            <div className={'image-container'}>
+                <img src={img} alt={`Slide ${id}`}/>
+            </div>
             <p>{title}</p>
             <p>{date}</p>
         </div>
