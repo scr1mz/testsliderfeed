@@ -8,7 +8,6 @@
   flex: 1;
 
   .image-container {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,26 +39,25 @@
     margin-top: .5em;
     color: fade-out($font-color1, 0.2);
   }
+}
 
-  &.shape-circle{
-    img{
-      clip-path: circle();
-      border-radius: 50%;
-    }
+.shape-circle{
+  img{
+    clip-path: circle();
   }
-  &.shape-leaf{
-    img{
-      border-radius: 55% 0;
-    }
+}
+.shape-leaf{
+  img{
+    border-radius: 55% 0;
   }
-  &.shape-reverse-leaf{
-    img{
-      border-radius: 0 55%;
-    }
+}
+.shape-reverse-leaf{
+  img{
+    border-radius: 0 55%;
   }
-  &.shape-ellipse{
-    img {
-      border-radius: 50% / 70%;
-    }
+}
+.shape-ellipse{
+  img {
+    border-radius: 50% / 70%;
   }
 }
