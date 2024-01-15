@@ -1,9 +1,9 @@
 @import "src/app/colors";
 .slide {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
-  max-height: 100%;
   text-align: center;
   flex: 1;
 
@@ -17,8 +17,14 @@
 
     img {
       width: 100%;
-      min-height: 5em;
       object-fit: cover;
+      max-height: 20vw;
+      @media (min-width: 700px) {
+        max-height: 18vw;
+      }
+      @media (min-width: 1000px) {
+        max-height: 14vw;
+      }
     }
   }
 
