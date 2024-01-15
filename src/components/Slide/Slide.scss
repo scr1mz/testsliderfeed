@@ -29,40 +29,16 @@
   }
 
   p {
-    font-size: 1em;
+    font-size: clamp(14px, 4vw, 26px);
     margin-bottom: 0;
     color: $font-color3;
     width: 100%;
-    @media (min-width: 2000px) {
-      font-size: 1.5em;
-    }
-    @media (max-width: 1999.99px) {
-      font-size: 1.3em;
-    }
-    @media (max-width: 1400px) {
-      font-size: 1.1em;
-    }
-    @media (max-width: 700px) {
-      font-size: 1em;
-    }
   }
 
   p:last-child{
-    font-size: .6em;
+    font-size: clamp(10px, 2vw, 18px);
     margin-top: .5em;
     color: fade-out($font-color1, 0.2);
-    @media (min-width: 2000px) {
-      font-size: 0.9em;
-    }
-    @media (max-width: 1999.99px) {
-      font-size: 0.8em;
-    }
-    @media (max-width: 1400px) {
-      font-size: 0.7em;
-    }
-    @media (max-width: 700px) {
-      font-size: 0.6em;
-    }
   }
 
   &.shape-circle{

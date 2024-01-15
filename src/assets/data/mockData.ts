@@ -4,7 +4,7 @@ const data = [
         types: 'types__1',
         img: 'https://celes.club/uploads/posts/2021-12/1640090749_5-celes-club-p-zhivotnie-v-derevne-zhivotnie-krasivo-foto-6.jpg',
         title: 'usefulMaterial',
-        date: '12 февраля 204',
+        date: '12 февраля 2024',
         shape: 'reverse-leaf'
     },
     {

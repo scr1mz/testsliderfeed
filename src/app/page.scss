@@ -17,36 +17,11 @@
     }
     h1{
       color: $font-color1;
-      font-size: 5em;
-      @media (max-width: 2000px) {
-        font-size: 4em;
-      }
-      @media (max-width: 1600px) {
-        font-size: 3em;
-      }
-      @media (max-width: 1024px) {
-        font-size: 2.5em;
-      }
-      @media (max-width: 768px) {
-        font-size: 2em;
-      }
+      font-size: clamp(20px, 5vw, 56px);
     }
     p{
-      width: 60%;
-      @media (min-width: 2000px) {
-        font-size: 2em;
-        width: 80%;
-      }
-      @media (max-width: 1999.99px) {
-        font-size: 1.5em;
-        width: 80%;
-      }
-      @media (max-width: 1400px) {
-        font-size: 1.2em;
-      }
-      @media (max-width: 768px) {
-        font-size: .9em;
-      }
+      width: 90%;
+      font-size: clamp(14px, 3vw, 30px);
     }
   }
 }
